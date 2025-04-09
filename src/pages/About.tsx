@@ -72,20 +72,40 @@ const About = () => {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">Research Focus</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">About Me</h2>
           <div className="bg-[#282c36] p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4">De Novo Structure-Based Design of TEM-171 β-Lactamase Protein Inhibitors</h3>
+            <h3 className="text-xl font-semibold mb-4">Personal Info</h3>
             <p className="text-gray-300 mb-4">
-              My research focuses on the design of protein inhibitors using integrated deep learning and multi-scale simulations to combat bacterial resistance.
+              <a href="mailto:krishivrp@gmail.com" className="text-magenta hover:underline">krishivrp@gmail.com</a>
             </p>
-            <a 
-              href="https://www.linkedin.com/in/krishiv-potluri-36821a2a8/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-magenta hover:text-opacity-80 font-medium underline"
-            >
-              Read the full paper
-            </a>
+            <p className="text-gray-300 mb-4">
+              <a href="https://www.linkedin.com/in/krishiv-potluri-36821a2a8/" target="_blank" rel="noopener noreferrer" className="text-magenta hover:underline">linkedin.com/in/krishiv-potluri</a>
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4 mt-8">Biography</h3>
+            <p className="text-gray-300 mb-4">
+              I'm a passionate researcher and computational biologist with expertise in machine learning, protein modeling, and drug discovery. My work focuses on creating innovative solutions to complex biological problems through the application of advanced computational techniques.
+            </p>
+            <p className="text-gray-300 mb-8">
+              Currently conducting ML & Computational Biology Research at UT Austin Oden Institute under Dr. Chandrajit Bajaj, where we are working to develop a Reinforcement Learning Based model to design antibodies.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-[#1a1c24] p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-magenta">Machine Learning</h4>
+                <p className="text-gray-300">Applying advanced ML techniques to solve complex biological problems and develop novel computational frameworks.</p>
+              </div>
+              
+              <div className="bg-[#1a1c24] p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-magenta">Research</h4>
+                <p className="text-gray-300">Conducting innovative research in computational biology, protein design, and drug discovery.</p>
+              </div>
+              
+              <div className="bg-[#1a1c24] p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-magenta">Awards</h4>
+                <p className="text-gray-300">Recognized for excellence in research competitions and hackathons focused on computational biology and AI.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
