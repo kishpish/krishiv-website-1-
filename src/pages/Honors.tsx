@@ -1,107 +1,157 @@
 
 import React from 'react';
-import { Award, GraduationCap, Briefcase, Star, Code } from 'lucide-react';
+import { BriefcaseIcon, AwardIcon, GraduationCapIcon, StarIcon, CodeIcon, DatabaseIcon, GlobeIcon } from 'lucide-react';
 
 const Honors = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">Honors & Experiences</h1>
+
+        {/* Professional Experience Section */}
+        <div className="mb-12">
+          <div className="section-heading">
+            <BriefcaseIcon className="section-icon" size={28} />
+            <h2>Professional Experience</h2>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <CodeIcon size={20} className="text-magenta" />
+                <span>ML & Computational Biology Research at UT Austin Oden Institute</span>
+              </div>
+              <div className="experience-date">
+                <span>Current</span>
+              </div>
+            </div>
+            <div className="experience-company">Oden Institute under Dr. Chandrajit Bajaj</div>
+            <p className="experience-description">
+              Working to develop a Reinforcement Learning Based model to design antibodies.
+            </p>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <GlobeIcon size={20} className="text-magenta" />
+                <span>Data Science & Analytics Internship</span>
+              </div>
+              <div className="experience-date">
+                <span>May 2024 - Aug 2024</span>
+              </div>
+            </div>
+            <div className="experience-company">Austin Energy</div>
+            <p className="experience-description">
+              Applied programming and data analytics skills in an on-site internship in Austin, Texas.
+            </p>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <DatabaseIcon size={20} className="text-magenta" />
+                <span>TEM-171 β-Lactamase Protein Inhibitors Research</span>
+              </div>
+              <div className="experience-date">
+                <span>2024</span>
+              </div>
+            </div>
+            <div className="experience-company">Independent Research</div>
+            <p className="experience-description">
+              De Novo Structure-Based Design of protein inhibitors using integrated deep learning and multi-scale simulations to combat bacterial resistance.
+            </p>
+          </div>
+        </div>
         
-        <div className="grid grid-cols-1 gap-8 mb-16">
-          <div className="bg-[#282c36] p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6 border-b border-gray-700 pb-4">Research Experience</h2>
-            <ul className="space-y-8">
-              <li className="flex">
-                <Briefcase className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">ML & Computational Biology Research at UT Austin Oden Institute</h3>
-                  <p className="text-gray-400 mb-2">Current</p>
-                  <p className="text-gray-300">
-                    Working under Dr. Chandrajit Bajaj to develop Reinforcement Learning Based models for antibody design.
-                  </p>
-                </div>
-              </li>
-              <li className="flex">
-                <Briefcase className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">TEM-171 β-Lactamase Protein Inhibitors Research</h3>
-                  <p className="text-gray-400 mb-2">2024</p>
-                  <p className="text-gray-300">
-                    De Novo Structure-Based Design of protein inhibitors using integrated deep learning and multi-scale simulations to combat bacterial resistance.
-                  </p>
-                </div>
-              </li>
-            </ul>
+        {/* Honors & Awards Section */}
+        <div className="mb-12">
+          <div className="section-heading">
+            <AwardIcon className="section-icon" size={28} />
+            <h2>Honors & Awards</h2>
           </div>
           
-          <div className="bg-[#282c36] p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6 border-b border-gray-700 pb-4">Honors & Awards</h2>
-            <ul className="space-y-8">
-              <li className="flex">
-                <Award className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">Siemens Competition Semifinalist</h3>
-                  <p className="text-gray-400 mb-2">2024</p>
-                  <p className="text-gray-300">
-                    Recognized for outstanding research in computational biology.
-                  </p>
-                </div>
-              </li>
-              <li className="flex">
-                <Award className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">AI4Science Competition Winner</h3>
-                  <p className="text-gray-400 mb-2">2023</p>
-                  <p className="text-gray-300">
-                    First place in a competition focusing on AI applications in scientific research.
-                  </p>
-                </div>
-              </li>
-              <li className="flex">
-                <Star className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">Presidential Scholar</h3>
-                  <p className="text-gray-400 mb-2">2023</p>
-                  <p className="text-gray-300">
-                    Recognized for academic excellence and research contributions.
-                  </p>
-                </div>
-              </li>
-            </ul>
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <AwardIcon size={20} className="text-magenta" />
+                <span>Siemens Competition Semifinalist</span>
+              </div>
+              <div className="experience-date">
+                <span>2024</span>
+              </div>
+            </div>
+            <p className="experience-description">
+              Recognized for outstanding research in computational biology.
+            </p>
           </div>
           
-          <div className="bg-[#282c36] p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6 border-b border-gray-700 pb-4">Technical Skills</h2>
-            <ul className="space-y-8">
-              <li className="flex">
-                <Code className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">Machine Learning & Deep Learning</h3>
-                  <p className="text-gray-300">
-                    Expertise in PyTorch, TensorFlow, and specialized models for protein structure prediction and design.
-                  </p>
-                </div>
-              </li>
-              <li className="flex">
-                <Code className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">Computational Biology Tools</h3>
-                  <p className="text-gray-300">
-                    Proficient with ESM-3, ProteinMPNN, BindCraft, and other computational biology frameworks.
-                  </p>
-                </div>
-              </li>
-              <li className="flex">
-                <GraduationCap className="text-magenta mr-4 mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl font-semibold">Academic Publications</h3>
-                  <p className="text-gray-300">
-                    Multiple articles published on protein modeling, AI in computational biology, and innovative research methodologies.
-                  </p>
-                </div>
-              </li>
-            </ul>
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <AwardIcon size={20} className="text-magenta" />
+                <span>AI4Science Competition Winner</span>
+              </div>
+              <div className="experience-date">
+                <span>2023</span>
+              </div>
+            </div>
+            <p className="experience-description">
+              First place in a competition focusing on AI applications in scientific research.
+            </p>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title">
+                <StarIcon size={20} className="text-magenta" />
+                <span>Presidential Scholar</span>
+              </div>
+              <div className="experience-date">
+                <span>2023</span>
+              </div>
+            </div>
+            <p className="experience-description">
+              Recognized for academic excellence and research contributions.
+            </p>
+          </div>
+        </div>
+        
+        {/* Technical Skills Section */}
+        <div>
+          <div className="section-heading">
+            <CodeIcon className="section-icon" size={28} />
+            <h2>Technical Skills</h2>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-title mb-3">
+              <CodeIcon size={20} className="text-magenta" />
+              <span>Machine Learning & Deep Learning</span>
+            </div>
+            <p className="experience-description">
+              Expertise in PyTorch, TensorFlow, and specialized models for protein structure prediction and design.
+            </p>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-title mb-3">
+              <CodeIcon size={20} className="text-magenta" />
+              <span>Computational Biology Tools</span>
+            </div>
+            <p className="experience-description">
+              Proficient with ESM-3, ProteinMPNN, BindCraft, and other computational biology frameworks.
+            </p>
+          </div>
+          
+          <div className="experience-card">
+            <div className="experience-title mb-3">
+              <GraduationCapIcon size={20} className="text-magenta" />
+              <span>Academic Publications</span>
+            </div>
+            <p className="experience-description">
+              Multiple articles published on protein modeling, AI in computational biology, and innovative research methodologies.
+            </p>
           </div>
         </div>
       </div>

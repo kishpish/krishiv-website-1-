@@ -34,6 +34,36 @@
     --ring: 328 86% 51%;
     --radius: 0.5rem;
   }
+
+  .light-mode {
+    --background: 0 0% 98%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 14% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 14% 18%;
+
+    --primary: 328 86% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 13% 28%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 13% 40%;
+
+    --accent: 328 86% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 65%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 86%;
+    --input: 220 13% 86%;
+    --ring: 328 86% 51%;
+  }
 }
 
 @layer base {
@@ -42,11 +72,63 @@
   }
 
   body {
-    @apply bg-navy text-foreground;
+    @apply bg-background text-foreground;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .light-mode .bg-navy {
+    @apply bg-[#f8f9fa];
+  }
+
+  .light-mode .bg-\[\#282c36\] {
+    @apply bg-white border border-gray-200;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.experience-card {
+  @apply bg-[#1a1c24] p-6 rounded-lg border border-gray-800 mb-6;
+}
+
+.light-mode .experience-card {
+  @apply bg-white border border-gray-200;
+}
+
+.experience-header {
+  @apply flex justify-between items-start mb-4;
+}
+
+.experience-title {
+  @apply text-xl font-semibold flex items-center gap-2;
+}
+
+.experience-date {
+  @apply text-magenta text-sm flex items-center;
+}
+
+.experience-company {
+  @apply text-gray-400 mb-2;
+}
+
+.experience-description {
+  @apply text-gray-300;
+}
+
+.light-mode .experience-description {
+  @apply text-gray-600;
+}
+
+.light-mode .experience-company {
+  @apply text-gray-500;
+}
+
+.section-heading {
+  @apply flex items-center gap-2 text-2xl font-bold mb-6;
+}
+
+.section-icon {
+  @apply text-magenta;
 }

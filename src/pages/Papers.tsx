@@ -1,8 +1,10 @@
 
 import React from 'react';
-import { File, Calendar } from 'lucide-react';
+import { File, Calendar, ExternalLink } from 'lucide-react';
 
 const Papers = () => {
+  const notionLink = "https://www.notion.so/Welcome-to-my-Page-on-Applications-of-AI-ML-with-Computational-Biology-501e7669ba0e4a669200651dd3a65d46";
+
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container mx-auto px-4">
@@ -19,9 +21,9 @@ const Papers = () => {
               href="https://www.linkedin.com/in/krishiv-potluri-36821a2a8/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-magenta hover:text-opacity-80 font-medium underline"
+              className="text-magenta hover:text-opacity-80 font-medium underline flex items-center gap-1"
             >
-              Read the full paper
+              Read the full paper <ExternalLink size={16} />
             </a>
           </div>
 
@@ -43,12 +45,12 @@ const Papers = () => {
               In the rapidly advancing modern field of computational drug discovery, ESM-3 (Evolutionary Scale Modeling 3)—developed by EvolutionaryScale AI Research—represents a major leap forward in our ability to understand and predict protein structures and functions. This comprehensive review will go deep into ESM-3's capabilities, limitations, and potential applications, focusing particularly on its role in drug discovery and protein modeling.
             </p>
             <a 
-              href="https://www.notion.so/Welcome-to-my-Page-on-Applications-of-AI-ML-with-Computational-Biology-501e7669ba0e4a669200651dd3a65d46" 
+              href={notionLink}
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-magenta hover:text-opacity-80 font-medium underline"
+              className="text-magenta hover:text-opacity-80 font-medium underline flex items-center gap-1"
             >
-              Read full article
+              Read full article <ExternalLink size={16} />
             </a>
           </div>
 
@@ -68,12 +70,12 @@ const Papers = () => {
               In the evolving field computational protein design, ProteinMPNN (Protein Message Passing Neural Network) has become recognized through its architecture offering impressive capabilities in predicting and designing protein sequences. While ProteinMPNN boasts numerous advantages, this article goes deeply into one of its most transformative features: the ability to capture long-range interactions.
             </p>
             <a 
-              href="https://www.notion.so/Welcome-to-my-Page-on-Applications-of-AI-ML-with-Computational-Biology-501e7669ba0e4a669200651dd3a65d46" 
+              href={notionLink}
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-magenta hover:text-opacity-80 font-medium underline"
+              className="text-magenta hover:text-opacity-80 font-medium underline flex items-center gap-1"
             >
-              Read full article
+              Read full article <ExternalLink size={16} />
             </a>
           </div>
 
@@ -93,12 +95,12 @@ const Papers = () => {
               BindCraft represents a significant advancement in protein binding design, employing a sophisticated multi-stage optimization process alongside numerous metrics to ensure reliable protein-protein interactions. This article delves into BindCraft's progression stages and the critical metrics that determine successful protein binding designs.
             </p>
             <a 
-              href="https://www.notion.so/Welcome-to-my-Page-on-Applications-of-AI-ML-with-Computational-Biology-501e7669ba0e4a669200651dd3a65d46" 
+              href={notionLink}
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-magenta hover:text-opacity-80 font-medium underline"
+              className="text-magenta hover:text-opacity-80 font-medium underline flex items-center gap-1"
             >
-              Read full article
+              Read full article <ExternalLink size={16} />
             </a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Briefcase, Mail, GraduationCap } from 'lucide-react';
+import { Briefcase, Mail, GraduationCap, Linkedin, Github } from 'lucide-react';
 
 const About = () => {
   return (
@@ -24,14 +24,16 @@ const About = () => {
               href="https://www.linkedin.com/in/krishiv-potluri-36821a2a8/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-magenta hover:bg-opacity-80 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200"
+              className="bg-magenta hover:bg-opacity-80 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200 flex items-center gap-2"
             >
+              <Linkedin size={16} />
               LinkedIn
             </a>
             <a
               href="mailto:krishivrp@gmail.com"
-              className="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200"
+              className="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200 flex items-center gap-2"
             >
+              <Mail size={16} />
               Contact Me
             </a>
           </div>
@@ -60,7 +62,12 @@ const About = () => {
               <h3 className="text-xl font-semibold">Contact</h3>
             </div>
             <p className="text-gray-300">Email: krishivrp@gmail.com</p>
-            <p className="text-gray-300">GitHub: @kishpish</p>
+            <p className="text-gray-300 flex items-center gap-2 mt-2">
+              <Github size={16} className="text-magenta" />
+              <a href="https://github.com/kishpish" target="_blank" rel="noopener noreferrer" className="hover:text-magenta">
+                @kishpish
+              </a>
+            </p>
           </div>
         </div>
 
