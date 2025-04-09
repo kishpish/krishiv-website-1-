@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-magenta mb-6">
             <img
-              src="/lovable-uploads/6b542b07-72ab-4d60-a513-ee3d833027e4.png"
+              src="/lovable-uploads/7c6df4d1-3057-4e82-bbbc-c81eb80f6559.png"
               alt="Krishiv Potluri"
               className="w-full h-full object-cover"
             />
