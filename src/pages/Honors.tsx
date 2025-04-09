@@ -1,12 +1,15 @@
 
 import React from 'react';
-import { BriefcaseIcon, AwardIcon, GraduationCapIcon, StarIcon, CodeIcon, DatabaseIcon, GlobeIcon } from 'lucide-react';
+import { BriefcaseIcon, AwardIcon, GraduationCapIcon, StarIcon, CodeIcon, DatabaseIcon, GlobeIcon, BookIcon } from 'lucide-react';
 
 const Honors = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">Honors & Experiences</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+          <span className="text-foreground">Honors & </span>
+          <span className="text-magenta">Experiences</span>
+        </h1>
 
         {/* Professional Experience Section */}
         <div className="mb-12">
@@ -15,7 +18,7 @@ const Honors = () => {
             <h2>Professional Experience</h2>
           </div>
           
-          <div className="experience-card">
+          <div className="experience-card hover:border-magenta transition-colors duration-300">
             <div className="experience-header">
               <div className="experience-title">
                 <CodeIcon size={20} className="text-magenta" />
@@ -31,7 +34,7 @@ const Honors = () => {
             </p>
           </div>
           
-          <div className="experience-card">
+          <div className="experience-card hover:border-magenta transition-colors duration-300">
             <div className="experience-header">
               <div className="experience-title">
                 <GlobeIcon size={20} className="text-magenta" />
@@ -55,9 +58,9 @@ const Honors = () => {
             <h2>Technical Skills</h2>
           </div>
           
-          <div className="experience-card">
+          <div className="experience-card hover:border-magenta transition-colors duration-300">
             <div className="experience-title mb-3">
-              <CodeIcon size={20} className="text-magenta" />
+              <DatabaseIcon size={20} className="text-magenta" />
               <span>Machine Learning & Deep Learning</span>
             </div>
             <p className="experience-description">
@@ -65,23 +68,13 @@ const Honors = () => {
             </p>
           </div>
           
-          <div className="experience-card">
+          <div className="experience-card hover:border-magenta transition-colors duration-300">
             <div className="experience-title mb-3">
-              <CodeIcon size={20} className="text-magenta" />
+              <BookIcon size={20} className="text-magenta" />
               <span>Computational Biology Tools</span>
             </div>
             <p className="experience-description">
               Proficient with ESM-3, ProteinMPNN, BindCraft, and other computational biology frameworks.
-            </p>
-          </div>
-          
-          <div className="experience-card">
-            <div className="experience-title mb-3">
-              <GraduationCapIcon size={20} className="text-magenta" />
-              <span>Academic Publications</span>
-            </div>
-            <p className="experience-description">
-              Multiple articles published on protein modeling, AI in computational biology, and innovative research methodologies.
             </p>
           </div>
         </div>
