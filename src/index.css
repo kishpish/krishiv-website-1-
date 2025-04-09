@@ -83,6 +83,22 @@
   .light-mode .bg-\[\#282c36\] {
     @apply bg-white border border-gray-200;
   }
+  
+  .light-mode .bg-\[\#1a1c24\] {
+    @apply bg-white;
+  }
+  
+  .light-mode .text-white {
+    @apply text-gray-900;
+  }
+  
+  .light-mode .text-gray-300 {
+    @apply text-gray-700;
+  }
+  
+  .light-mode .text-gray-400 {
+    @apply text-gray-600;
+  }
 }
 
 html {
@@ -94,7 +110,7 @@ html {
 }
 
 .light-mode .experience-card {
-  @apply bg-white border border-gray-200;
+  @apply bg-white border border-gray-200 shadow-sm;
 }
 
 .experience-header {
